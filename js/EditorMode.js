@@ -24,6 +24,21 @@ let freshMap = 	[	00, 00, 00, 00, 00, 00, 00, 02, 00, 00, 00, 00, 00, 00, 00, 00
 					00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00,
 					00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, ];
 
+freshMap = [ 	0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0 ]
+
+
+
+
+
 
 
 
@@ -89,9 +104,16 @@ function setupTileButtons() {
 
 	let btn = document.createElement('button');
 	btn.innerHTML = 'Generate Level Data';
-	btn.addEventListener('click', function(){ console.log("I AM ALIIIIIIVE!!!") })
-	tileButtonContainer.appendChild(btn)
+	btn.addEventListener('click', generateReadableMapData);
+	tileButtonContainer.appendChild(btn);
 
+}
+
+function generateReadableMapData() {
+	let freshMapText = freshMap+'';
+	let readableString ='[ ' + freshMapText.replace(/,/g , ", ") + ' ]';
+	
+	console.log(readableString)
 }
 
 
