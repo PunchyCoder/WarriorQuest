@@ -55,16 +55,6 @@ function loadImages() {
 		{worldType: TILE_SPIKES, theFile: "tile_spikes.png"},
 		{worldType: TILE_FOOD, theFile: "tile_food.png"},
 		{worldType: TILE_POTION, theFile: "tile_potion.png"},
-
-		// {worldType: TILE_GROUND, theFile: "tile_ground.png"},
-		// {worldType: TILE_WALL, theFile: "tile_wall.png"},
-		// {worldType: TILE_GOAL, theFile: "tile_chest.png"},
-		// {worldType: TILE_KEY, theFile: "tile_key.png"},
-		// {worldType: TILE_DOOR, theFile: "tile_door.png"},
-		// {worldType: TILE_SPIKES, theFile: "tile_spikes.png"},
-		// {worldType: TILE_FOOD, theFile: "tile_food.png"},
-		// {worldType: TILE_POTION, theFile: "tile_potion.png"},
-
 	];
 
 	picsToLoad = imageList.length;

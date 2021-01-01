@@ -31,12 +31,6 @@ let freshMap = 	[	00, 00, 00, 00, 00, 00, 00, 02, 00, 00, 00, 00, 00, 00, 00, 00
 let storedTileValue;
 
 
-/*
-	let tileButtonContainer = document.getElementById('editor-mode');
-	editorModeButtonContainer.innerHTML += "<input type='image' src='images/tile_wall.png'></input>";
-	
-*/
-
 // ------ COPIED FUNCTION FROM WORLD.JS --------
 // --- MAY REPURPOSE FOR FINDING MOUSE X/Y ONCLICK ----
 // ------------------------------------------------
@@ -64,22 +58,22 @@ function setStoredTileValue(val) {
 
 var imageList = [
 		// {varName: warriorPic, theFile: "warrior.png"},
-		{varName: warriorFacingNorth, theFile: "images/warrior-face-north.png"},
-		{varName: warriorFacingEast, theFile: "images/warrior-face-east.png"},
-		{varName: warriorFacingSouth, theFile: "images/warrior-face-south.png"},
-		{varName: warriorFacingWest, theFile: "images/warrior-face-west.png"},
-		{varName: emptyHeart, theFile: "images/heart_empty.png"},
-		{varName: leftHalfHeart, theFile: "images/heart_left_half.png"},
-		{varName: rightHalfHeart, theFile: "images/heart_right_half.png"},
+		{varName: warriorFacingNorth, 	theFile: "images/warrior-face-north.png"},
+		{varName: warriorFacingEast, 	theFile: "images/warrior-face-east.png"},
+		{varName: warriorFacingSouth, 	theFile: "images/warrior-face-south.png"},
+		{varName: warriorFacingWest, 	theFile: "images/warrior-face-west.png"},
+		{varName: emptyHeart, 			theFile: "images/heart_empty.png"},
+		{varName: leftHalfHeart, 		theFile: "images/heart_left_half.png"},
+		{varName: rightHalfHeart, 		theFile: "images/heart_right_half.png"},
 
-		{varName: tile_Ground, theFile: "images/tile_ground.png", tileValue: 00},
-		{varName: tile_Wall, theFile: "images/tile_wall.png", tileValue: 01},
-		{varName: tile_Chest, theFile: "images/tile_chest.png", tileValue: 03},
-		{varName: tile_GoldenKey, theFile: "images/tile_key.png", tileValue: 20},
-		{varName: tile_Door, theFile: "images/tile_door.png", tileValue: 30},
-		{varName: tile_Spikes, theFile: "images/tile_spikes.png", tileValue: 40},
-		{varName: tile_Food, theFile: "images/tile_food.png", tileValue: 10},
-		{varName: tile_Potion, theFile: "images/tile_potion.png", tileValue: 11}
+		{varName: tile_Ground, 		theFile: "images/tile_ground.png", 	tileValue: 00},
+		{varName: tile_Wall, 		theFile: "images/tile_wall.png", 	tileValue: 01},
+		{varName: tile_Chest, 		theFile: "images/tile_chest.png", 	tileValue: 03},
+		{varName: tile_GoldenKey, 	theFile: "images/tile_key.png", 	tileValue: 4},
+		{varName: tile_Door, 		theFile: "images/tile_door.png", 	tileValue: 5},
+		{varName: tile_Spikes, 		theFile: "images/tile_spikes.png", 	tileValue: 6},
+		{varName: tile_Food, 		theFile: "images/tile_food.png", 	tileValue: 7},
+		{varName: tile_Potion, 		theFile: "images/tile_potion.png", 	tileValue: 8}
 
 	];
 
