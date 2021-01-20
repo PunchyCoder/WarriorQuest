@@ -32,3 +32,10 @@ BUG-FIX; food heals only one unit of health and not beyond max health
 - added basic solution; console.logged the new map data
 
 - added a little bit of regex to make code data copy/paste/readable.
+
+
+
+### Paint the Tiles in Editor Mode
+-------------------------
+
+--Work out how to make it so WHILE the mouse button is being held down the selected tile is painted on the map.

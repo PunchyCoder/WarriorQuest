@@ -13,6 +13,7 @@ function warriorClass() {
 	this.myWarriorPic; // which picture to use
 	this.name = "Untitled Warrior";
 	this.keysHeld = 0;
+	this.potionsHeld = 0;
 
 	this.keyHeld_North = false;
 	this.keyHeld_South = false;
@@ -39,6 +40,7 @@ function warriorClass() {
 		this.myWarriorPic = whichImage;
 		this.keysHeld = 0;
 		this.updateKeyReadout();
+		this.updatePotionReadout();
 		
 
 		for(var eachRow=0;eachRow<WORLD_ROWS;eachRow++) {
@@ -57,6 +59,10 @@ function warriorClass() {
 
 	this.updateKeyReadout = function() {
 		document.getElementById("debugText").innerHTML = "Keys: " + this.keysHeld;
+	}
+
+	this.updatePotionReadout = function() {
+		document.getElementById('potionReadout').innerHTML = `Potions: ${this.potionsHeld}`;
 	}
 
 
@@ -112,7 +118,9 @@ function warriorClass() {
 			case TILE_POTION:
 				this.x = nextX;
 				this.y = nextY;
-				playersHUD.restoreHealth('full');
+				// playersHUD.restoreHealth('full');
+				this.potionsHeld ++;
+				this.updatePotionReadout();
 				worldGrid[walkIntoTileIndex] = TILE_GROUND;
 				break;
 			case TILE_GOAL:

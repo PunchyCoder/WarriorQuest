@@ -36,7 +36,7 @@ var hudClass = function(whichWarrior) {
 			// When player loses all hearts, GameOver, start/load the level again.
 			if(this.health <= 0) {
 				this.restoreHealth('full');
-				loadLevel(levelOne);
+				loadLevel(roomTwo);
 
 			}
 			isInvincible = true;
@@ -47,7 +47,7 @@ var hudClass = function(whichWarrior) {
 			setTimeout(function() {
 				isInvincible = false;
 				console.log(isInvincible, "Blue Warrior is MORTAL")
-			}, 3000)
+			}, 1500)
 
 		}
 			

@@ -20,6 +20,7 @@ var mouseY = 0;
 function setupInput() {
 	canvas.addEventListener('mousemove', updateMousePos);
 	canvas.addEventListener('click', mouseButtonClicked);
+	canvas.addEventListener('mousedown', mouseButtonPressed);
 
 	document.addEventListener('keydown', keyPressed);
 	document.addEventListener('keyup', keyReleased);
@@ -54,6 +55,10 @@ function mouseButtonClicked(evt) {
 	console.log(freshMap[clickedIndex], storedTileValue);
 	
 	freshMap[getTileIndexAtPixelCoord(mouseX, mouseY)] = storedTileValue;
+}
+
+function mouseButtonPressed(evt) {
+	console.log('mouse button pressed NOW!')
 }
 
 

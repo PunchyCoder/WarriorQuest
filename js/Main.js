@@ -24,7 +24,7 @@ function imageLoadingDoneSoStartGame() {
 	// Playing with adding the button-images, have to wait for images to load.
 	setupTileButtons();
 
-	if(!titleScreen){loadLevel(roomTwo);}
+	if(!titleScreen){loadLevel(freshMap);}
 	//loadLevel(roomTwo);
 }
 
